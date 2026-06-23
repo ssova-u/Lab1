@@ -1,0 +1,18 @@
+/* Short written answer
+
+https://egov.kz/cms/ru
+
+1. CSS request
+File: https://egov.kz/cms/sites/all/themes/egov_kz/css/libs/bootstrap.min.css
+Purpose:
+This file is responsible for the visual appearance of the website.
+
+2. JavaScript request
+File: https://egov.kz/cms/sites/all/modules/egov/egov_mobile/egov_mobile.js?tbb0ow
+Purpose:
+This file adds interactivity and dynamic functionality.
+
+3. Image request
+File: https://egov.kz/cms/sites/default/files/constitution.rus.png
+Purpose:
+This file displays visual content such as logos and icons. spacing.

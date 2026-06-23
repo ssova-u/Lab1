@@ -1,0 +1,6 @@
+/* curl scavenger hunt
+1. curl -L -s -o /dev/null -w "%{http_code}\n" https://egov.kz
+   200
+
+2. curl -s -o /dev/null -w "%{http_code}\n" https://httpbin.org/status/404
+  404
