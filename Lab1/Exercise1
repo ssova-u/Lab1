@@ -1,0 +1,43 @@
+/* 1. DNS report
+1. nslookup egov.kz
+
+Non-authoritative answer:
+Name:   egov.kz
+Address: 195.12.113.2
+
+dig egov.kz NS
+ANSWER SECTION:
+egov.kz.                14400   IN      NS      ns1.nitec.kz.
+egov.kz.                14400   IN      NS      ns4.nitec.kz.
+egov.kz.                14400   IN      NS      ns3.nitec.kz.
+
+TTL is 14400 seconds (4 hours).
+This is a relatively long cache duration. Such a TTL reduces the load on DNS servers and improves performance because Google's infrastructure is stable enough and does not require frequent DNS updates.
+
+2. nslookup google.com
+Non-authoritative answer:
+Name:   google.com
+Address: 216.58.207.14
+
+dig google.com NS
+ANSWER SECTION:
+google.com.             14400   IN      NS      ns1.google.com.
+google.com.             14400   IN      NS      ns4.google.com.
+google.com.             14400   IN      NS      ns2.google.com.
+google.com.             14400   IN      NS      ns3.google.com.
+
+TTL is 14400 seconds (4 hours).
+This is a relatively long cache duration. Such a TTL reduces the load on DNS servers and improves performance because Google's infrastructure is stable enough and does not require frequent DNS updates.
+
+3. nslookup wildberries.ru
+Non-authoritative answer:
+Name:   wildberries.ru
+Address: 185.62.202.2
+
+dig wildberries.ru NS
+ANSWER SECTION:
+wildberries.ru.         900     IN      NS      ns2.wildberries.ru.
+wildberries.ru.         900     IN      NS      ns1.wildberries.ru.
+
+TTL is 900 seconds (15 minutes).
+This is a short TTL. It allows faster DNS updates and gives more flexibility for infrastructure changes. This is useful for a large e-commerce platform like Wildberries, where servers and traffic can change frequently.
